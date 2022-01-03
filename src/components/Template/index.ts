@@ -1,2 +1,2 @@
-import { Template } from "./Template";
+import {Template} from './Template';
 export default Template;

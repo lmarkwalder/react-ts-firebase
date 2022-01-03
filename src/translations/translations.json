@@ -1,0 +1,19 @@
+{
+    "resources": {
+        "en": {
+            "translation": {
+                "Hello World": "Hello World..."
+            }
+        },
+        "de": {
+            "translation": {
+                "Hello World": "Hallo Welt..."
+            }
+        }
+    },
+    "lng": "en",
+    "fallbackLng": "en",
+    "interpolation": {
+        "escapeValue": false
+    }
+}

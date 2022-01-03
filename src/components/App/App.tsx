@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Template from '../Template';
 
 export const App = () => {
-    useEffect(() => {});
-    return <Template />
-}
+    return <Template />;
+};

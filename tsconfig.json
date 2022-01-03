@@ -1,18 +1,24 @@
 {
-  "compilerOptions": {
-    "outDir": "./dist/",
-    "strict": true,
-    "module": "es6",
-    "target": "es5",
-    "jsx": "react",
-    "allowJs": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "sourceMap": true,
-    "types": ["react/next", "react-dom/next", "node", "jest"],
-  },
-  "include": [
-      "src/**/*",
-  ]     
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "strict": true,
+        "module": "es6",
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "types": [
+            "react/next",
+            "react-dom/next",
+            "node",
+            "jest"
+        ],
+    },
+    "include": [
+        "src/**/*",
+    ]
 }

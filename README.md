@@ -11,12 +11,11 @@ Includes the following:
 - React 18 release candidate. 
 - React router v6.
 - Predefined src-folder structure, component template
-- Jest unit test setup 
-
+- Jest unit test setup.
+- eslint config (4-tab, Google styleguide)
+- i18next: translations in translations/translations.json, use keys using useTranslate hook.
 ## TODO
 - Jest React component tests (snapshot, react test library)
-- Text translations (i18n)
-- Linter (ts/react)
 - Uglify/minify
 - robots.txt file for dist (copy plugin)
 - usage of repo (how to create new project)
