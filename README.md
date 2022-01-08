@@ -14,6 +14,34 @@ Includes the following:
 - Jest unit test setup.
 - eslint config (4-tab, Google styleguide)
 - i18next: translations in translations/translations.json, use keys using useTranslate hook.
+
+## Firebase setup
+
+1. Make sure latest version of Firebase CLI is installed on your machine:
+`npm install -g firebase-tools`
+
+2. Login to your firebase account.
+
+3. In the project folder run `firebase init` and select the following items:
+    a. Firestore (security rules and index file for the database)
+    b. Functions (backend/server side functions)
+    c. Hosting (configure files for Firebase hosting, do not select Github action deploys item)
+    d. Storage (setup security rules file for Firebase storage)
+4. Choose project name and id and then follow dialog (choose default values, emulators: firestore, storage, hosting, functions, authentication)
+
+As a result the follwoing files folders are created by `firebase init`:
+	.firebaserc: Firebase project name
+	firebase.json: Settings for different firebase modules
+	firestore.indexes.json
+	firestore.rules: Firestore security rules
+	functions/: Backend project (Typescript, can share types with frontend)
+	public/: Output for hosting
+	storage.rules: Storage security rules
+
+=> Deployment through `firebase deploy` (Blaze plan required, don't forget to setup budget alert)a
+TODO: Change public folder to dist folder as frontend bundle currently is in dist
+TODO: ensure cloud functions are on Europe-West-6
+
 ## TODO
 - Jest React component tests (snapshot, react test library)
 - Uglify/minify
