@@ -6,7 +6,11 @@
   "scripts": {
     "test": "jest --verbose --watch",
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack serve --open --config webpack.dev.js"
+    "start": "webpack serve --open --config webpack.dev.js",
+    "emulate": "firebase emulators:start",
+    "dev": "./kill.sh && ttab firebase emulators:start && ttab npm start",
+    "dev-seed": "./kill.sh && ttab firebase emulators:start --import='./emulator_seed' && ttab npm start && ttab open http://localhost:4000",
+    "update-seed": "./kill.sh && ttab firebase emulators:start --export-on-exit='./emulator_seed' --import='./emulator_seed' && ttab npm start && ttab open http://localhost:4000"
   },
   "author": "Lawrence Markwalder",
   "license": "ISC",
@@ -33,6 +37,7 @@
     "webpack-merge": "latest"
   },
   "dependencies": {
+    "firebase": "^9.6.2",
     "i18next": "^21.6.4",
     "react": "^18.0.0-rc.0",
     "react-dom": "^18.0.0-rc.0",

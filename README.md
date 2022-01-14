@@ -38,9 +38,9 @@ As a result the follwoing files folders are created by `firebase init`:
 	public/: Output for hosting
 	storage.rules: Storage security rules
 
-=> Deployment through `firebase deploy` (Blaze plan required, don't forget to setup budget alert)a
-TODO: Change public folder to dist folder as frontend bundle currently is in dist
+=> Deployment through `firebase deploy` (Blaze plan required, don't forget to setup budget alert, deploys /dist to www-root)
 TODO: ensure cloud functions are on Europe-West-6
+TODO: npm run dev-seed/update-seed
 
 ## TODO
 - Jest React component tests (snapshot, react test library)
